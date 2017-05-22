@@ -12,9 +12,11 @@
             {% endif %}
         {% endspaceless %}</title>
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ url(minify('css/poole.css')) }}">
-    <link rel="stylesheet" href="{{ url(minify('css/syntax.css')) }}">
-    <link rel="stylesheet" href="{{ url(minify('css/hyde.css')) }}">
+    {#
+        <link rel="stylesheet" href="{{ url(minify('css/poole.css')) }}">
+        <link rel="stylesheet" href="{{ url(minify('css/syntax.css')) }}">
+        <link rel="stylesheet" href="{{ url(minify('css/hyde.css')) }}">
+    #}
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
     <!-- Icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ url('apple-touch-icon-144-precomposed.png') }}">
@@ -25,4 +27,5 @@
     <link rel="stylesheet" href="https://highlightjs.org/static/demo/styles/monokai_sublime.css">
     <script src="https://highlightjs.org/static/highlight.pack.js"></script>
     <script>hljs.initHighlightingOnLoad();</script>
+    <script type="text/javascript" src="{{ url('js/app.js') }}"></script>
 </head>

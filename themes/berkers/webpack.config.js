@@ -4,8 +4,8 @@ module.exports = {
   entry: "./app/entry",
 
   output: {
-    path    : path.resolve(__dirname, "dist"),
-    filename: 'output.css'
+    path    : path.resolve(__dirname, "static/js"),
+    filename: 'app.js'
   },
 
   module: {
