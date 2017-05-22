@@ -11,4 +11,4 @@ site:
     disabled: true
     homepage:
       section: blog
-theme: hyde
+theme: berkers

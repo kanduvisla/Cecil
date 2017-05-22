@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>{{ site.title }}</title>
+    <subtitle>{{ site.baseline }}</subtitle>
+    <link href="{{ url('atom.xml') }}" rel="self"/>
+    <link href="{{ site.baseurl }}"/>
+    <id>{{ site.baseurl }}</id>
+    <updated>{{ page.date|date('Y-m-dTH:i:sP') }}</updated>
+    {% for page in site.pages|filterBy('section', 'blog')|sortByDate %}
+        {% if page.id != 'blog/index' %}
+            <entry>
+                <title>{{ page.title }}</title>
+                <link href="{{ url(page) }}"/>
+                <id>{{ url(page) }}</id>
+                <updated>{{ page.date|date('Y-m-dTH:i:sP') }}</updated>
+                <summary>{{ page.content|excerpt|striptags }}</summary>
+                <content type="xhtml">
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        {{ page.content }}
+                    </div>
+                </content>
+            </entry>
+        {% endif %}
+    {% endfor %}
+</feed>
