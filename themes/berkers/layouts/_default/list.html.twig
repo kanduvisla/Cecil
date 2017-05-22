@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
     {% include 'include/head.html.twig' %}
     <body>
+        {% include 'include/topnav.html.twig' %}
         <div class="content container">
             <div class="posts">
                 {% for post in site.pages|filterBy('section', page.pathname)|sortByDate %}
