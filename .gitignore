@@ -1,6 +1,6 @@
 vendor/
 _site/
 .phpoole/
-themes/*
+themes/hyde/
 .idea/
 phpoole.phar
