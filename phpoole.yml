@@ -1,8 +1,8 @@
 site:
   title: Meh...
-  baseline: Tech Blog by Giel Berkers
+  baseline: by Giel Berkers
   baseurl: /
-  description: Because someone needs to do it
+  description: Attempt #123
   menu:
     main:
       blog:

@@ -2,3 +2,5 @@ vendor/
 _site/
 .phpoole/
 themes/*
+.idea/
+phpoole.phar
