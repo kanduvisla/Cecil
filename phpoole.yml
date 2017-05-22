@@ -1,8 +1,8 @@
 site:
-  title: Cecil
-  baseline: Your blog's butler.
+  title: Meh...
+  baseline: Tech Blog by Giel Berkers
   baseurl: /
-  description: Your blog's butler, powered by PHPoole.
+  description: Because someone needs to do it
   menu:
     main:
       blog:
